@@ -17,7 +17,7 @@ export function SmoothScrollProvider({ children }: { children: ReactNode }) {
 
   useEffect(() => {
     if (reduced) return;
-    const lenis = new Lenis({ duration: 1.15, smoothWheel: true, easing: (t) => 1 - Math.pow(1 - t, 4) });
+    const lenis = new Lenis({ lerp: 0.16, smoothWheel: true, wheelMultiplier: 1 });
     lenisRef.current = lenis;
     let raf = 0;
     const loop = (time: number) => {
@@ -37,7 +37,7 @@ export function SmoothScrollProvider({ children }: { children: ReactNode }) {
     const el = typeof target === 'string' ? document.querySelector<HTMLElement>(target) : target;
     if (el === null) return;
     if (lenisRef.current) {
-      lenisRef.current.scrollTo(el, { offset, immediate: opts.immediate, duration: 1.4 });
+      lenisRef.current.scrollTo(el, { offset, immediate: opts.immediate, duration: 0.9 });
     } else {
       const top = typeof el === 'number' ? el : el.getBoundingClientRect().top + window.scrollY + offset;
       window.scrollTo({ top, behavior: opts.immediate ? 'auto' : 'smooth' });

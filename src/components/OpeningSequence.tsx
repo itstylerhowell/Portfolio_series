@@ -9,12 +9,12 @@ import { EASE, Magnetic } from './fx';
  * black → studio card → TYLER → THE SERIES → portrait reveal → role → ▶ PLAY
  */
 const TIMELINE = [
-  { at: 300, beat: 1 }, // studio card
-  { at: 1900, beat: 2 }, // name
-  { at: 2700, beat: 3 }, // THE SERIES
-  { at: 3400, beat: 4 }, // portrait
-  { at: 4300, beat: 5 }, // role
-  { at: 5000, beat: 6 }, // play button
+  { at: 210, beat: 1 }, // studio card
+  { at: 1330, beat: 2 }, // name
+  { at: 1889, beat: 3 }, // THE SERIES
+  { at: 2380, beat: 4 }, // portrait
+  { at: 3010, beat: 5 }, // role
+  { at: 3500, beat: 6 }, // play button
 ];
 
 export default function OpeningSequence({ onDone }: { onDone: () => void }) {
@@ -38,14 +38,14 @@ export default function OpeningSequence({ onDone }: { onDone: () => void }) {
   return (
     <motion.div
       className="fixed inset-0 z-[120] overflow-hidden bg-black"
-      exit={{ opacity: 0, scale: 1.04, filter: 'blur(12px)' }}
-      transition={{ duration: 0.9, ease: EASE }}
+      exit={{ opacity: 0, scale: 1.04 }}
+      transition={{ duration: 0.68, ease: EASE }}
       role="dialog"
       aria-label="Opening titles"
     >
       {/* letterbox bars */}
-      <motion.div className="absolute inset-x-0 top-0 z-30 h-[7vh] bg-black" initial={{ y: 0 }} animate={{ y: beat >= 6 ? '-100%' : 0 }} transition={{ duration: 1.2, ease: EASE }} />
-      <motion.div className="absolute inset-x-0 bottom-0 z-30 h-[7vh] bg-black" initial={{ y: 0 }} animate={{ y: beat >= 6 ? '100%' : 0 }} transition={{ duration: 1.2, ease: EASE }} />
+      <motion.div className="absolute inset-x-0 top-0 z-30 h-[7vh] bg-black" initial={{ y: 0 }} animate={{ y: beat >= 6 ? '-100%' : 0 }} transition={{ duration: 0.9, ease: EASE }} />
+      <motion.div className="absolute inset-x-0 bottom-0 z-30 h-[7vh] bg-black" initial={{ y: 0 }} animate={{ y: beat >= 6 ? '100%' : 0 }} transition={{ duration: 0.9, ease: EASE }} />
 
       {/* projector flicker light */}
       <motion.div
@@ -54,7 +54,7 @@ export default function OpeningSequence({ onDone }: { onDone: () => void }) {
         style={{ background: 'radial-gradient(60% 50% at 50% 55%, rgba(229,19,43,0.22), transparent 70%)' }}
         initial={{ opacity: 0 }}
         animate={{ opacity: beat >= 2 ? [0, 0.9, 0.5, 1] : 0 }}
-        transition={{ duration: 1.4 }}
+        transition={{ duration: 1.05 }}
       />
 
       {/* studio card */}
@@ -65,14 +65,14 @@ export default function OpeningSequence({ onDone }: { onDone: () => void }) {
             className="absolute inset-0 flex items-center justify-center"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            exit={{ opacity: 0, filter: 'blur(6px)' }}
-            transition={{ duration: 0.6 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.45 }}
           >
             <motion.p
               className="font-sans text-xs font-semibold text-mist sm:text-sm"
               initial={{ letterSpacing: '0.2em', opacity: 0 }}
               animate={{ letterSpacing: '0.6em', opacity: 1 }}
-              transition={{ duration: 1.6, ease: EASE }}
+              transition={{ duration: 1.2, ease: EASE }}
             >
               {profile.originalLabel}
             </motion.p>
@@ -83,9 +83,9 @@ export default function OpeningSequence({ onDone }: { onDone: () => void }) {
       {/* portrait */}
       <motion.div
         className="absolute inset-x-0 bottom-0 z-0 mx-auto flex h-[68vh] max-w-[900px] items-end justify-center"
-        initial={{ opacity: 0, scale: 1.12, filter: 'blur(18px) brightness(0.3)' }}
-        animate={beat >= 4 ? { opacity: 1, scale: 1, filter: 'blur(0px) brightness(1)' } : {}}
-        transition={{ duration: 1.6, ease: EASE }}
+        initial={{ opacity: 0, scale: 1.12 }}
+        animate={beat >= 4 ? { opacity: 1, scale: 1 } : {}}
+        transition={{ duration: 1.2, ease: EASE }}
       >
         <img
           src={profile.portrait.src}
@@ -103,9 +103,9 @@ export default function OpeningSequence({ onDone }: { onDone: () => void }) {
         <motion.h1
           className="font-display leading-[0.82] text-bone drop-shadow-[0_8px_40px_rgba(0,0,0,0.8)]"
           style={{ fontSize: 'clamp(4.6rem, 20vw, 15rem)' }}
-          initial={{ opacity: 0, scale: 1.3, filter: 'blur(20px)', letterSpacing: '0.5em' }}
-          animate={beat >= 2 ? { opacity: 1, scale: 1, filter: 'blur(0px)', letterSpacing: '0.04em', y: beat >= 4 ? '-30vh' : 0 } : {}}
-          transition={{ duration: 1.3, ease: EASE }}
+          initial={{ opacity: 0, scale: 1.3, letterSpacing: '0.5em' }}
+          animate={beat >= 2 ? { opacity: 1, scale: 1, letterSpacing: '0.04em', y: beat >= 4 ? '-30vh' : 0 } : {}}
+          transition={{ duration: 0.98, ease: EASE }}
         >
           {profile.firstName}
         </motion.h1>
@@ -113,7 +113,7 @@ export default function OpeningSequence({ onDone }: { onDone: () => void }) {
           className="font-sans text-sm font-bold text-crimson-2 [text-shadow:0_2px_20px_rgba(0,0,0,0.9)] sm:text-lg"
           initial={{ opacity: 0, letterSpacing: '1.4em' }}
           animate={beat >= 3 ? { opacity: 1, letterSpacing: '0.7em', y: beat >= 4 ? '-30vh' : 0 } : {}}
-          transition={{ duration: 1.1, ease: EASE }}
+          transition={{ duration: 0.83, ease: EASE }}
         >
           {profile.seriesTag}
         </motion.p>
@@ -125,11 +125,11 @@ export default function OpeningSequence({ onDone }: { onDone: () => void }) {
           className="font-sans text-[10px] font-semibold uppercase tracking-[0.22em] text-bone/90 sm:text-sm sm:tracking-[0.4em]"
           initial={{ opacity: 0, y: 14 }}
           animate={beat >= 5 ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.8, ease: EASE }}
+          transition={{ duration: 0.6, ease: EASE }}
         >
           {profile.tagline.join('  •  ')}
         </motion.p>
-        <motion.div initial={{ opacity: 0, scale: 0.8 }} animate={beat >= 6 ? { opacity: 1, scale: 1 } : {}} transition={{ duration: 0.7, ease: EASE }}>
+        <motion.div initial={{ opacity: 0, scale: 0.8 }} animate={beat >= 6 ? { opacity: 1, scale: 1 } : {}} transition={{ duration: 0.52, ease: EASE }}>
           <Magnetic>
             <button
               type="button"

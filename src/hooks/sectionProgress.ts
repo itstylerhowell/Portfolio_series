@@ -9,6 +9,7 @@ const listeners = new Set<() => void>();
 let snapshot = { ...progress };
 
 function set(id: string, value: number) {
+  value = Math.round(value * 50) / 50;
   if ((progress[id] ?? 0) >= value) return;
   progress[id] = value;
   snapshot = { ...progress };

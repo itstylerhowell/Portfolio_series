@@ -38,7 +38,7 @@ export default function ProfileSelector({ onPick }: { onPick: (id: ProfileId) =>
       className="fixed inset-0 z-[110] flex flex-col items-center justify-center overflow-y-auto bg-ink px-4 py-16"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      exit={{ opacity: 0, scale: 1.08, filter: 'blur(10px)' }}
+      exit={{ opacity: 0, scale: 1.08 }}
       transition={{ duration: 0.7, ease: EASE }}
       role="dialog"
       aria-label="Who's watching?"
@@ -46,9 +46,9 @@ export default function ProfileSelector({ onPick }: { onPick: (id: ProfileId) =>
       <div aria-hidden className="absolute inset-0 bg-[radial-gradient(60%_50%_at_50%_0%,rgba(229,19,43,0.14),transparent_70%)]" />
       <motion.h2
         className="relative mb-10 text-center font-sans text-3xl font-medium tracking-tight text-bone sm:text-5xl"
-        initial={{ opacity: 0, y: 20, filter: 'blur(8px)' }}
-        animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
-        transition={{ duration: 0.8, ease: EASE }}
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.52, ease: EASE }}
       >
         Who&apos;s watching?
       </motion.h2>

@@ -10,7 +10,6 @@ export default function FinalCTA({ onReplay }: { onReplay: () => void }) {
   const { scrollTo } = useSmoothScroll();
   const { scrollYProgress } = useScroll({ target: ref, offset: ['start end', 'start 0.2'] });
   const spacing = useTransform(scrollYProgress, [0, 1], ['0.6em', '0.02em']);
-  const blur = useTransform(scrollYProgress, [0, 1], ['blur(16px)', 'blur(0px)']);
   const opacity = useTransform(scrollYProgress, [0.1, 0.9], [0, 1]);
 
   const ctas = [
@@ -34,7 +33,7 @@ export default function FinalCTA({ onReplay }: { onReplay: () => void }) {
       </motion.p>
       <motion.h2
         className="relative font-display leading-[0.85] text-bone"
-        style={{ fontSize: 'clamp(3.4rem, 13vw, 12rem)', letterSpacing: spacing, filter: blur, opacity }}
+        style={{ fontSize: 'clamp(3.4rem, 13vw, 12rem)', letterSpacing: spacing, opacity }}
       >
         TO BE CONTINUED…
       </motion.h2>
@@ -44,7 +43,7 @@ export default function FinalCTA({ onReplay }: { onReplay: () => void }) {
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: '-10% 0px' }}
-        transition={{ duration: 0.9, ease: EASE, delay: 0.2 }}
+        transition={{ duration: 0.59, ease: EASE, delay: 0.2 }}
       >
         <p className="font-sans text-2xl font-semibold tracking-[0.2em] text-bone sm:text-3xl">{profile.displayName.toUpperCase()}</p>
         <p className="mt-2 text-xs font-semibold tracking-[0.4em] text-mist sm:text-sm">{profile.role.toUpperCase()}</p>

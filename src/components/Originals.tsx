@@ -105,7 +105,7 @@ function RailOriginals({ onOpen }: { onOpen: (p: Project) => void }) {
         initial={{ opacity: 0, x: 60 }}
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
-        transition={{ duration: 0.9, ease: EASE }}
+        transition={{ duration: 0.59, ease: EASE }}
       >
         {projects.map((p, i) => (
           <ProjectCard key={p.id} project={p} index={i} onOpen={() => onOpen(p)} />

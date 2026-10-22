@@ -61,12 +61,11 @@ body {
 /* Film grain — a single fixed layer, cheap and subtle */
 .grain {
   position: fixed;
-  inset: -50%;
+  inset: 0;
   pointer-events: none;
   z-index: 90;
   opacity: 0.055;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-  animation: grain 1.2s steps(6) infinite;
 }
 @keyframes grain {
   0% { transform: translate(0, 0); }
@@ -101,10 +100,8 @@ body {
 }
 
 .glass {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.03));
+  background: linear-gradient(180deg, rgba(30, 30, 38, 0.82), rgba(18, 18, 24, 0.72));
   border: 1px solid rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(14px) saturate(140%);
-  -webkit-backdrop-filter: blur(14px) saturate(140%);
 }
 
 .focus-ring:focus-visible,
@@ -119,7 +116,6 @@ a:focus-visible {
   position: absolute;
   height: 1px;
   background: linear-gradient(90deg, transparent, rgba(255, 90, 110, 0.9), transparent);
-  filter: blur(0.4px);
   animation: streak 7s var(--ease-cine) infinite;
   opacity: 0;
 }

@@ -47,7 +47,7 @@ export function Tilt({
   const ry = useSpring(useTransform(px, [0, 1], [-max, max]), { stiffness: 180, damping: 20 });
   const gx = useTransform(px, (v) => `${v * 100}%`);
   const gy = useTransform(py, (v) => `${v * 100}%`);
-  const glareBg = useTransform([gx, gy], ([a, b]) => `radial-gradient(circle at ${a} ${b}, rgba(255,255,255,0.16), transparent 55%)`);
+  const glareBg = useTransform([gx, gy], ([a, b]) => `radial-gradient(circle at ${a} ${b}, rgba(255,255,255,0.07), transparent 55%)`);
 
   return (
     <motion.div
@@ -67,7 +67,7 @@ export function Tilt({
     >
       {children}
       {active && glare && (
-        <motion.div aria-hidden className="pointer-events-none absolute inset-0 z-20 rounded-[inherit] mix-blend-overlay" style={{ background: glareBg }} />
+        <motion.div aria-hidden className="pointer-events-none absolute inset-0 z-20 rounded-[inherit]" style={{ background: glareBg }} />
       )}
     </motion.div>
   );
@@ -91,8 +91,8 @@ export function RevealText({ text, className = '', delay = 0, as = 'span' }: { t
           <motion.span
             className="inline-block"
             variants={{
-              hidden: { y: '105%', opacity: 0, filter: 'blur(8px)' },
-              show: { y: '0%', opacity: 1, filter: 'blur(0px)', transition: { duration: 0.9, ease: EASE } },
+              hidden: { y: '105%', opacity: 0 },
+              show: { y: '0%', opacity: 1, transition: { duration: 0.59, ease: EASE } },
             }}
           >
             {w}
@@ -127,7 +127,7 @@ export function SectionHeading({ kicker, title, aside }: { kicker: string; title
 }
 
 /** Lightweight drifting dust particles on a canvas — pauses when off screen. */
-export function Particles({ count = 46, color = '255,90,110', className = '' }: { count?: number; color?: string; className?: string }) {
+export function Particles({ count = 30, color = '255,90,110', className = '' }: { count?: number; color?: string; className?: string }) {
   const ref = useRef<HTMLCanvasElement>(null);
   const reduced = useReducedMotionPref();
 
@@ -136,7 +136,8 @@ export function Particles({ count = 46, color = '255,90,110', className = '' }: 
     if (!canvas || reduced) return;
     const ctx = canvas.getContext('2d');
     if (!ctx) return;
-    const dpr = Math.min(window.devicePixelRatio || 1, 2);
+    // Tiny soft dots don't need retina resolution; 1x keeps each frame cheap.
+    const dpr = 1;
     let w = 0;
     let h = 0;
     const resize = () => {
@@ -164,7 +165,10 @@ export function Particles({ count = 46, color = '255,90,110', className = '' }: 
     let running = false;
     let last = performance.now();
     const tick = (now: number) => {
-      const dt = Math.min(50, now - last);
+      raf = requestAnimationFrame(tick);
+      // Drift is slow, so 30 fps looks identical and halves the work.
+      if (now - last < 32) return;
+      const dt = Math.min(60, now - last);
       last = now;
       ctx.clearRect(0, 0, w, h);
       for (const d of dots) {
@@ -183,7 +187,6 @@ export function Particles({ count = 46, color = '255,90,110', className = '' }: 
         ctx.arc(d.x * w, d.y * h, d.r, 0, Math.PI * 2);
         ctx.fill();
       }
-      raf = requestAnimationFrame(tick);
     };
     const io = new IntersectionObserver(([entry]) => {
       if (entry.isIntersecting && !running) {

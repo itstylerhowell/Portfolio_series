@@ -13,7 +13,7 @@ export default function ResumeSection({ onView }: { onView: () => void }) {
           initial={{ opacity: 0, y: 60, rotateX: 10 }}
           whileInView={{ opacity: 1, y: 0, rotateX: 0 }}
           viewport={{ once: true, margin: '-10% 0px' }}
-          transition={{ duration: 1.1, ease: EASE }}
+          transition={{ duration: 0.72, ease: EASE }}
           style={{ transformPerspective: 1600 }}
         >
           <CollapsibleSheet />
