@@ -14,7 +14,7 @@ export const profile = {
   /** Fictional studio card shown at the very start of the opening sequence. */
   originalLabel: 'A HOWELL ORIGINAL',
   role: 'Entrepreneur',
-  tagline: ['Entrepreneur', "Assistant Manager @ Culver's", 'AI Builder'],
+  tagline: ['Entrepreneur'],
   /** Small rating-style badge shown next to the hero meta line. */
   badge: 'NEW',
   intro:
