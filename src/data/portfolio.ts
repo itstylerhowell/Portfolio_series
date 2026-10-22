@@ -18,7 +18,7 @@ export const profile = {
   /** Small rating-style badge shown next to the hero meta line. */
   badge: 'NEW',
   intro:
-    "An aspiring entrepreneur and 3rd Assistant Manager at Culver's who believes in challenging the status quo — through curiosity, independent thinking and new ideas across business, technology and innovation, built for the greater common good.",
+    'An entrepreneur who believes in challenging the status quo — through curiosity, independent thinking and new ideas across business, technology and innovation, built for the greater common good.',
   location: 'Anoka, Minnesota',
   country: 'United States',
   email: 'itstylerhowell@gmail.com',
