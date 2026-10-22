@@ -9,7 +9,7 @@ const SLIDE_MS = 3600;
 
 /**
  * "▶ Play Intro": darken → zoom into the portrait → a full-screen highlight reel
- * built only from resume facts → fade back to the portfolio.
+ * built only from profile facts → fade back to the portfolio.
  */
 export default function PlayIntro({ onClose }: { onClose: () => void }) {
   useScrollLock(true);

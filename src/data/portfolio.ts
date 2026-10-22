@@ -1,65 +1,118 @@
 /**
- * Central portfolio data — generated from Sushmita's resume (Sushmita_dasari.pdf).
+ * Central portfolio data — generated from Tyler Howell's LinkedIn profile.
  * Every fact on the site comes from this file. Update it here and the whole site follows.
- * Nothing here should be added unless it appears on the resume.
+ * Nothing here should be added unless it appears on the profile.
  */
 
 export type Palette = { from: string; via: string; to: string; accent: string };
 
 export const profile = {
-  fullName: 'Dasari Venkata Ratna Sri Sushmita',
-  displayName: 'Sushmita Dasari',
-  firstName: 'SUSHMITA',
+  fullName: 'Tyler Howell',
+  displayName: 'Tyler Howell',
+  firstName: 'TYLER',
   seriesTag: 'THE SERIES',
   /** Fictional studio card shown at the very start of the opening sequence. */
-  originalLabel: 'A DASARI ORIGINAL',
-  role: 'Full-Stack Developer',
-  tagline: ['Full-Stack Developer', 'AI / ML', 'Java'],
+  originalLabel: 'A HOWELL ORIGINAL',
+  role: 'Entrepreneur',
+  tagline: ['Entrepreneur', "Assistant Manager @ Culver's", 'AI Builder'],
+  /** Small rating-style badge shown next to the hero meta line. */
+  badge: 'NEW',
   intro:
-    'A B.Tech Artificial Intelligence & Machine Learning student (CGPA 9.10) and full-stack developer building AI-powered platforms, payment systems and multi-tenant SaaS with Java, Python, React, Node.js and Docker.',
-  location: 'Surampalem, Andhra Pradesh',
-  email: 'sushmitadasari17@gmail.com',
+    "An aspiring entrepreneur and 3rd Assistant Manager at Culver's who believes in challenging the status quo — through curiosity, independent thinking and new ideas across business, technology and innovation, built for the greater common good.",
+  location: 'Anoka, Minnesota',
+  country: 'United States',
+  email: 'itstylerhowell@gmail.com',
   links: {
-    linkedin: 'https://www.linkedin.com/in/sushmita-dasari-227a40284/',
-    github: 'https://github.com/Sushmitadasari',
+    linkedin: 'https://www.linkedin.com/in/tyler-howell-a57b81355/',
+    github: 'https://github.com/itstylerhowell',
+    x: 'https://x.com/TylerHowell88',
   },
-  resumePdf: '/assets/Sushmita_Dasari_Resume.pdf',
+  resumePdf: '/assets/Tyler_Howell_Resume.pdf',
+  resumeFileName: 'Tyler_Howell_Resume.pdf',
   portrait: {
     src: '/assets/portrait-720.webp',
     srcSet: '/assets/portrait-420.webp 420w, /assets/portrait-720.webp 720w, /assets/portrait-1100.webp 1100w',
-    alt: 'Portrait of Sushmita Dasari',
+    alt: 'Portrait of Tyler Howell',
   },
-  interests: ['System Design', 'Cloud Computing (AWS)', 'Machine Learning'],
+  interests: ['Entrepreneurship', 'Business & Innovation', 'Technology & AI', 'Bitcoin', 'Hospitality & Entertainment'],
 };
 
 export const education = [
   {
-    school: 'Aditya Engineering College',
-    place: 'Surampalem',
-    degree: 'Bachelor of Technology — Artificial Intelligence and Machine Learning',
-    period: 'October 2023 – Present',
-    score: 'CGPA 9.10',
-  },
-  {
-    school: 'Sri Chaitanya Junior College',
-    place: 'Kakinada',
-    degree: 'BIEAP — MPC',
-    period: 'June 2021 – May 2023',
-    score: 'Score 925/1000',
+    school: 'Anoka High School',
+    place: 'Anoka, MN',
+    degree: 'High School Diploma',
+    period: 'September 2020 – June 2024',
+    score: 'Graduated early',
   },
 ];
 
 export const experience = [
   {
-    company: 'Technical Hub Pvt Ltd',
-    role: 'Trainee',
-    place: 'Surampalem, AP',
-    period: 'May 2025 – June 2026',
+    company: "Culver's Restaurants",
+    role: '3rd Assistant Manager',
+    place: 'Anoka, MN · On-site',
+    period: 'September 2026 – Present',
     points: [
-      'Completed one year of intensive Full-Stack Development (FSD) training covering frontend, backend, database integration, and deployment workflows.',
-      'Developed responsive and functional web applications by implementing user interfaces, server-side logic, and database connectivity.',
-      'Deployed and managed web applications while applying version control, debugging, and end-to-end development practices.',
+      "Promoted into restaurant management after nearly four years with Culver's, covering fast-food management, labor & sales tracking and team leadership.",
     ],
+  },
+  {
+    company: "Culver's Restaurants",
+    role: 'Team Trainer',
+    place: 'Anoka, MN · On-site',
+    period: 'June 2026 – September 2026',
+    points: [
+      'Trained employees across multiple positions through hands-on coaching and guided instruction.',
+      'Ensured every trainee completed the required BBU training videos before starting each position.',
+      'Administered certification assessments during scheduled shifts to verify each trainee was ready to work a position independently.',
+    ],
+  },
+  {
+    company: "Culver's Restaurants",
+    role: 'Crew Member',
+    place: 'Anoka, MN · On-site',
+    period: 'January 2023 – June 2026',
+    points: [
+      'Ran full front-of-house operations — register, order running and guest engagement — with a consistent focus on customer satisfaction.',
+      'Handled full back-of-house operations including food preparation, cooking and food-safety and temperature standards.',
+      'Kept composure, speed and quality through high-pressure, high-volume rushes.',
+      'Led morning prep and completed closing duties so the restaurant met cleanliness and safety standards.',
+      'Cross-trained and certified in every back-of-house and front-of-house position.',
+    ],
+  },
+];
+
+export const volunteering = [
+  {
+    org: 'Special Olympics Minnesota',
+    role: 'Member · College Board of Directors',
+    period: 'September 2025 – May 2026',
+    points: [],
+  },
+  {
+    org: 'Special Olympics Minnesota',
+    role: 'Event Volunteer',
+    period: 'March 2025 – April 2026',
+    points: [
+      'Worked 1:1 with athletes with physical and/or cognitive disabilities.',
+      'Coordinated with volunteers, staff and parents so every athlete and event ran smoothly.',
+    ],
+  },
+  {
+    org: 'Young Life',
+    role: 'Adult Volunteer',
+    period: 'March 2025 – April 2026',
+    points: [
+      'Provided 1:1 care and support for individuals with disabilities over multi-day programs.',
+      'Supervised and supported high school and new volunteers in the program.',
+    ],
+  },
+  {
+    org: 'Freshwater Church',
+    role: 'Special Needs Ministry Volunteer',
+    period: 'March 2025 – April 2026',
+    points: ['Provided 1:1 support for children with a disability during weekly services and handled safe drop-off and pick-up with parents.'],
   },
 ];
 
@@ -77,95 +130,41 @@ export type Project = {
   metrics: Metric[];
   /** Omit when the repository isn't public — the GitHub button is hidden instead of linking to a 404. */
   github?: string;
+  /** Live site, when there is one. */
+  live?: string;
   palette: Palette;
-  motif: 'shield' | 'flow' | 'tenants';
+  motif: 'shield' | 'flow' | 'tenants' | 'mail';
 };
 
 export const projects: Project[] = [
   {
-    id: 'policyguard-ai',
-    title: 'PolicyGuard AI',
+    id: 'satoshi-mail',
+    title: 'Satoshi Mail',
     year: '2026',
-    genre: 'AI • NLP • LLM',
-    logline: 'An AI-powered policy analysis platform across web, browser extension, mobile and desktop applications.',
-    stack: ['Python', 'NLP', 'LLM', 'REST API'],
+    genre: 'AI • Bitcoin • Interactive Archive',
+    logline: 'An interactive archive of the public records, documents and digital trail of Satoshi Nakamoto, the pseudonymous creator of Bitcoin.',
+    stack: ['Claude Code', 'Anthropic Claude', 'AI', 'Vercel'],
     build: [
-      'Built an AI-powered policy analysis platform across web, browser extension, mobile, and desktop applications, processing 500+ policy documents with 92% accuracy and reducing manual review time by 60% across 8 policy categories.',
-      'Engineered LLM-based Q&A, key-information extraction, and REST API integration for 10+ document types, enabling real-time policy insights and reducing decision turnaround time by 45%.',
+      "Inspired by Riley Walz and Luke Igel's Jmail — forked their open-source database as the foundation, then used Claude AI to build an interactive archive around Satoshi Nakamoto.",
+      'Explores public records, historical documents and source materials, making the history and mystery of Bitcoin’s creator fun and engaging for Bitcoiners — and helping drive Bitcoin adoption.',
     ],
     features: [
-      'LLM-based Q&A over policy documents',
-      'Key-information extraction',
-      'REST API integration for 10+ document types',
-      'Web, browser extension, mobile & desktop apps',
-      'Real-time policy insights',
+      'Gmail-style inbox of Satoshi’s writings',
+      'Satoshipedia — a built-in encyclopedia',
+      'Public records & historical source materials',
+      'Built with Claude Code',
+      'Live in beta',
     ],
     metrics: [
-      { value: '500+', label: 'policy documents processed' },
-      { value: '92%', label: 'accuracy' },
-      { value: '60%', label: 'less manual review time' },
-      { value: '45%', label: 'faster decision turnaround' },
-      { value: '8', label: 'policy categories' },
+      { value: 'Oct 2026', label: 'launched' },
+      { value: 'Beta', label: 'in active development' },
+      { value: '2', label: 'apps — inbox + Satoshipedia' },
+      { value: '₿', label: 'built for Bitcoiners' },
     ],
-    // The resume links to https://github.com/Sushmitadasari/PolicyGuard-AI, which is not public yet (404).
-    // Add `github: 'https://github.com/Sushmitadasari/PolicyGuard-AI',` back once the repo is public.
-    palette: { from: '#2a0610', via: '#7a0f24', to: '#0b0710', accent: '#ff3d5a' },
-    motif: 'shield',
-  },
-  {
-    id: 'payment-gateway',
-    title: 'Payment Gateway System',
-    year: '2026',
-    genre: 'Full-Stack • Fintech • Microservices',
-    logline: 'A full-stack UPI & card payment gateway built around a strict payment state machine.',
-    stack: ['Node.js', 'Express', 'PostgreSQL', 'React', 'Docker'],
-    build: [
-      'Built full-stack UPI & card payment gateway processing 1,000+ transactions at 99.8% uptime with a strict payment state machine (processing → success/failed).',
-      'Dockerized microservice architecture cut deployment setup by 70%; backend optimizations reduced API response time by 40% and tripled throughput under load.',
-    ],
-    features: [
-      'UPI & card payments',
-      'Strict payment state machine (processing → success / failed)',
-      'Dockerized microservice architecture',
-      'Backend optimizations for load',
-    ],
-    metrics: [
-      { value: '1,000+', label: 'transactions processed' },
-      { value: '99.8%', label: 'uptime' },
-      { value: '70%', label: 'less deployment setup' },
-      { value: '40%', label: 'faster API response' },
-      { value: '3×', label: 'throughput under load' },
-    ],
-    github: 'https://github.com/Sushmitadasari/Payment-gateway-system-Project',
+    // The repository is private for now, so no GitHub button is shown.
+    live: 'https://satoshimail.vercel.app',
     palette: { from: '#1a0d02', via: '#8a4a07', to: '#0a0806', accent: '#ffb547' },
-    motif: 'flow',
-  },
-  {
-    id: 'multi-tenant-saas',
-    title: 'Multi-Tenant SaaS Platform',
-    year: '2026',
-    genre: 'SaaS • Security • DevOps',
-    logline: 'Shared-database multi-tenancy with strict tenant isolation and 4-level JWT/RBAC.',
-    stack: ['Node.js', 'React', 'PostgreSQL', 'Docker Compose'],
-    build: [
-      'Architected shared-database multi-tenancy for 50+ concurrent tenants with strict tenant_id isolation and 4-level JWT/RBAC, achieving zero unauthorized-access incidents across 200+ users.',
-      'Implemented Docker Compose one-command deployment, reducing environment setup time from 45 minutes to under 2 minutes.',
-    ],
-    features: [
-      'Shared-database multi-tenancy',
-      'Strict tenant_id isolation',
-      '4-level JWT / RBAC',
-      'One-command Docker Compose deployment',
-    ],
-    metrics: [
-      { value: '50+', label: 'concurrent tenants' },
-      { value: '200+', label: 'users' },
-      { value: '0', label: 'unauthorized-access incidents' },
-      { value: '45m → <2m', label: 'environment setup time' },
-    ],
-    github: 'https://github.com/Sushmitadasari/Multi-Tenant-SaaS-Platform',
-    palette: { from: '#04121f', via: '#0f4c6e', to: '#05080d', accent: '#4cc9ff' },
-    motif: 'tenants',
+    motif: 'mail',
   },
 ];
 
@@ -180,62 +179,57 @@ export type Achievement = {
 
 export const achievements: Achievement[] = [
   {
-    id: 'algouniversity',
-    title: 'Tech Fellow',
-    org: 'AlgoUniversity',
-    detail: 'Selected through competitive national selection — advanced DSA, algorithm optimization, and competitive coding.',
-    laurel: 'National Selection',
+    id: 'career-climb',
+    title: 'Crew to Manager',
+    org: "Culver's Restaurants",
+    detail: 'Crew Member → Team Trainer → 3rd Assistant Manager in under four years.',
+    laurel: 'Promoted Twice',
   },
   {
-    id: 'flipkart-grid',
-    title: 'Semi-Finalist',
-    org: 'Flipkart GRiD 7.0',
-    detail: 'Competed among top national engineering talent.',
-    laurel: 'Semi-Finalist',
-    link: 'https://drive.google.com/file/d/16pXA2hssyJqlYMr27wfi6U4bjKDLvh9f/view?usp=drive_link',
+    id: 'every-position',
+    title: 'Every Position',
+    org: "Culver's Restaurants",
+    detail: 'Cross-trained and certified in every back-of-house and front-of-house position.',
+    laurel: 'All-Rounder',
   },
   {
-    id: 'branch-topper',
-    title: 'AIML Branch Topper',
-    org: 'B.Tech AI & ML',
-    detail: '9.24 SGPA for the semester.',
-    laurel: 'Branch Topper',
+    id: 'board',
+    title: 'Board of Directors',
+    org: 'Special Olympics Minnesota',
+    detail: 'Member of the College Board of Directors, September 2025 – May 2026.',
+    laurel: 'Leadership',
   },
   {
-    id: 'competitive-coding',
-    title: '850+ Problems Solved',
-    org: 'LeetCode • GFG • CodeChef',
-    detail: 'LeetCode: 350+ DSA problems (peak rating 1442). GFG: 300+ problems (rating 1436). CodeChef: 200+ problems.',
-    laurel: 'Competitive Coding',
+    id: 'servsafe',
+    title: 'ServSafe Manager',
+    org: 'ServSafe',
+    detail: 'Food Protection Manager Certification with a score of 86 — valid through 2031.',
+    laurel: 'Certified',
   },
   {
-    id: 'hackerrank',
-    title: '5-Star Badges',
-    org: 'HackerRank',
-    detail: '5-star badges in C, Python, Java, and SQL.',
-    laurel: 'Four Languages',
+    id: 'graduated-early',
+    title: 'Graduated Early',
+    org: 'Anoka High School',
+    detail: 'Completed every academic requirement ahead of schedule.',
+    laurel: 'Head Start',
   },
 ];
 
-export type Certification = { issuer: string; name: string; link: string };
+export type Certification = { issuer: string; name: string; link?: string };
 
 export const certifications: Certification[] = [
-  { issuer: 'NPTEL', name: 'Database Management System', link: 'https://drive.google.com/file/d/1MqkJHchXeaGD4S8mzPmEGxEYddAsxAjN/view?usp=drive_link' },
-  { issuer: 'NPTEL', name: 'Fundamentals of Artificial Intelligence', link: 'https://drive.google.com/file/d/1GqyUQ-lrE-bHaN457t6fIdssgGG4HMXf/view?usp=drive_link' },
-  { issuer: 'NPTEL', name: 'Deep Learning', link: 'https://drive.google.com/file/d/1PWSRP5SQDPzkoTCF3A24eIJoSpTwgsff/view?usp=sharing' },
-  { issuer: 'AWS', name: 'AWS Certified AI Practitioner', link: 'https://drive.google.com/file/d/1h8e5p0a9T6f5gBaOP2ROfwWHZfkkspGn/view?usp=drive_link' },
-  { issuer: 'AWS', name: 'AWS Academy Graduate – Cloud Foundations', link: 'https://www.credly.com/badges/2d4810f9-3dbe-444d-99b9-61312ea5e7df/public_url' },
-  { issuer: 'MongoDB', name: 'MongoDB Certified Associate Developer', link: 'https://www.credly.com/badges/fd3362bd-743a-4c4d-a68e-b1fdc5d46811/public_url' },
-  { issuer: 'GitHub', name: 'GitHub Foundations', link: 'https://drive.google.com/file/d/1o0fkCAMRWTg1oMwxlqu6t6wnOpBv66Vq/view?usp=sharing' },
-  { issuer: 'Pearson', name: 'IT Specialist – HTML and CSS', link: 'https://www.credly.com/badges/e4a55298-e396-41d8-a032-283aafe9fab7/public_url' },
-  { issuer: 'Oracle', name: 'Java Certified Foundations Associate', link: 'https://drive.google.com/file/d/1g-yyceHtLg_k2RWiOIJqH0MMcGlaH90P/view?usp=sharing' },
-  { issuer: 'Oracle', name: 'Oracle Certified Foundations Associate – Database', link: 'https://drive.google.com/file/d/10-DzabbcH2vHrI6bAohoT8czKRZMa2kV/view?usp=drive_link' },
-  { issuer: 'Cisco', name: 'HTML Essentials', link: 'https://www.credly.com/badges/eb27ca95-3b2a-4948-bef9-0385d1d49055/public_url' },
-  { issuer: 'Cisco', name: 'CSS Essentials', link: 'https://www.credly.com/badges/3b37497f-6a61-4889-af3c-ed337a460a0b/public_url' },
-  { issuer: 'Cisco', name: 'JavaScript Essentials 1', link: 'https://www.credly.com/badges/9cdd4d55-6ecc-463f-b254-811ccdd0539c/public_url' },
-  { issuer: 'Cisco', name: 'JavaScript Essentials 2', link: 'https://www.credly.com/badges/0e1b036e-4318-4c8e-b750-2aca77314442/public_url' },
-  { issuer: 'Cisco', name: 'Python Essentials 1', link: 'https://www.credly.com/badges/0e21e3eb-d8ef-4770-95d7-dcbd6f8696b1/public_url' },
-  { issuer: 'Udemy', name: 'Microsoft Azure Hands-On Training (AZ-900, AZ-104, AZ-305)', link: 'https://drive.google.com/file/d/1KrXClhY0nJ3Acxs7DioNf4Q1rpaMvgPT/view?usp=sharing' },
+  { issuer: 'ServSafe', name: 'ServSafe Food Protection Manager Certification' },
+  { issuer: 'StateFoodSafety', name: 'Food Allergens Essentials Course' },
+  {
+    issuer: 'LinkedIn',
+    name: 'Foundations of Raising Capital',
+    link: 'https://www.linkedin.com/learning/certificates/b305380ca6315464f8fdddbc953a3eac6631a169810dcc136edb62405892dd31/',
+  },
+  {
+    issuer: 'LinkedIn',
+    name: 'Entrepreneurship Foundations',
+    link: 'https://www.linkedin.com/learning/certificates/bf893faf2208bd38cc2de0eca38a680ed3bb068c7f00a993d5f4ea0b0e371c91/',
+  },
 ];
 
 export type Skill = { name: string; mono: string; note?: string };
@@ -243,112 +237,113 @@ export type SkillCategory = { id: string; title: string; subtitle: string; skill
 
 export const skillCategories: SkillCategory[] = [
   {
-    id: 'languages',
-    title: 'Languages',
-    subtitle: 'Java is the primary language',
+    id: 'leadership',
+    title: 'Leadership',
+    subtitle: 'Running the shift',
     skills: [
-      { name: 'Java', mono: 'Jv', note: 'Primary' },
-      { name: 'Python', mono: 'Py' },
-      { name: 'C', mono: 'C' },
-      { name: 'C++', mono: 'C+' },
+      { name: 'Fast Food Management', mono: 'Fm', note: 'Now' },
+      { name: 'Employee Training', mono: 'Et' },
+      { name: 'New Hire Training', mono: 'Nh' },
+      { name: 'Staff Training', mono: 'St' },
+      { name: 'Labor & Sales Tracking', mono: 'Ls' },
+      { name: 'Interpersonal Skills', mono: 'Ip' },
     ],
   },
   {
-    id: 'frontend',
-    title: 'Frontend',
-    subtitle: 'Interfaces & the web platform',
+    id: 'ai',
+    title: 'AI & Building',
+    subtitle: 'How Satoshi Mail got made',
     skills: [
-      { name: 'React', mono: 'Re' },
-      { name: 'HTML', mono: 'Ht' },
-      { name: 'CSS', mono: 'Cs' },
-      { name: 'JavaScript', mono: 'Js' },
+      { name: 'Claude Code', mono: 'Cc' },
+      { name: 'Anthropic Claude', mono: 'Ac' },
+      { name: 'Artificial Intelligence (AI)', mono: 'Ai' },
     ],
   },
   {
-    id: 'backend',
-    title: 'Backend',
-    subtitle: 'Server-side logic',
+    id: 'business',
+    title: 'Business',
+    subtitle: 'The entrepreneur track',
     skills: [
-      { name: 'Node.js', mono: 'No' },
-      { name: 'Express.js', mono: 'Ex' },
+      { name: 'Entrepreneurship', mono: 'En' },
+      { name: 'Capital Raising', mono: 'Cr' },
     ],
   },
   {
-    id: 'infra',
-    title: 'Infra & Tools',
-    subtitle: 'Shipping & architecture',
+    id: 'operations',
+    title: 'Restaurant Ops',
+    subtitle: 'Front & back of house',
     skills: [
-      { name: 'Docker', mono: 'Dk' },
-      { name: 'Docker Compose', mono: 'Dc' },
-      { name: 'REST APIs', mono: 'Ap' },
-      { name: 'Microservices', mono: 'Ms' },
-      { name: 'JWT Auth', mono: 'Jw' },
-      { name: 'Git / GitHub', mono: 'Gt' },
-      { name: 'Postman', mono: 'Pm' },
+      { name: 'Fast Food Operational Skills', mono: 'Fo' },
+      { name: 'Food and Beverage Operations', mono: 'Fb' },
+      { name: 'Food Preparation', mono: 'Fp' },
+      { name: 'Food Service', mono: 'Fs' },
+      { name: 'Customer Service', mono: 'Cs' },
+      { name: 'Cash Handling', mono: 'Ch' },
     ],
   },
   {
-    id: 'databases',
-    title: 'Databases',
-    subtitle: 'Indexing • Normalization',
+    id: 'food-safety',
+    title: 'Food Safety',
+    subtitle: 'ServSafe certified',
     skills: [
-      { name: 'PostgreSQL', mono: 'Pg' },
-      { name: 'MongoDB', mono: 'Mg' },
-      { name: 'MySQL', mono: 'My' },
+      { name: 'Food Safety', mono: 'Sf' },
+      { name: 'HACCP Regulations', mono: 'Hc' },
+      { name: 'Cross-Contamination Prevention', mono: 'Cx' },
+      { name: 'Safe Food Preparation', mono: 'Sp' },
+      { name: 'Food Allergies', mono: 'Fa' },
+      { name: 'Cleaning and Sanitizing', mono: 'Cl' },
+      { name: 'Receiving and Storing Food', mono: 'Rs' },
+      { name: 'Thawing, Cooking, Cooling & Reheating', mono: 'Tc' },
+      { name: 'Good Personal Hygiene', mono: 'Gh' },
     ],
   },
   {
-    id: 'fundamentals',
-    title: 'CS Fundamentals',
-    subtitle: 'The foundations',
+    id: 'community',
+    title: 'Community',
+    subtitle: 'From volunteering',
     skills: [
-      { name: 'DSA', mono: 'Ds' },
-      { name: 'OS', mono: 'Os' },
-      { name: 'CN', mono: 'Cn' },
-      { name: 'DBMS', mono: 'Db' },
-      { name: 'OOPs', mono: 'Oo' },
-      { name: 'Collections', mono: 'Co' },
-      { name: 'Multithreading', mono: 'Mt' },
-    ],
-  },
-  {
-    id: 'interests',
-    title: 'Interests',
-    subtitle: 'Coming soon to the series',
-    skills: [
-      { name: 'System Design', mono: 'Sd' },
-      { name: 'Cloud Computing (AWS)', mono: 'Aw' },
-      { name: 'Machine Learning', mono: 'Ml' },
+      { name: 'Disability Awareness', mono: 'Da' },
+      { name: 'Childcare', mono: 'Cd' },
+      { name: 'Sports Management', mono: 'Sm' },
     ],
   },
 ];
 
 /**
  * Factual cross-references shown when a skill card is hovered/tapped:
- * where the skill appears in the projects, certifications or achievements on the resume.
+ * where the skill appears in the roles, projects, certifications or volunteering on the profile.
  */
+const servsafe = 'ServSafe Food Protection Manager';
 export const skillEvidence: Record<string, string[]> = {
-  Java: ['Oracle Java Certified Foundations Associate', 'HackerRank 5-star'],
-  Python: ['PolicyGuard AI', 'Cisco Python Essentials 1', 'HackerRank 5-star'],
-  C: ['HackerRank 5-star'],
-  React: ['Payment Gateway System', 'Multi-Tenant SaaS Platform'],
-  HTML: ['Pearson IT Specialist – HTML and CSS', 'Cisco HTML Essentials'],
-  CSS: ['Pearson IT Specialist – HTML and CSS', 'Cisco CSS Essentials'],
-  JavaScript: ['Cisco JavaScript Essentials 1 & 2'],
-  'Node.js': ['Payment Gateway System', 'Multi-Tenant SaaS Platform'],
-  'Express.js': ['Payment Gateway System'],
-  Docker: ['Payment Gateway System'],
-  'Docker Compose': ['Multi-Tenant SaaS Platform'],
-  'REST APIs': ['PolicyGuard AI'],
-  Microservices: ['Payment Gateway System'],
-  'JWT Auth': ['Multi-Tenant SaaS Platform'],
-  'Git / GitHub': ['GitHub Foundations'],
-  PostgreSQL: ['Payment Gateway System', 'Multi-Tenant SaaS Platform'],
-  MongoDB: ['MongoDB Certified Associate Developer'],
-  DBMS: ['NPTEL Database Management System', 'Oracle Database Foundations'],
-  DSA: ['AlgoUniversity Tech Fellow', '850+ problems solved'],
-  'Cloud Computing (AWS)': ['AWS Certified AI Practitioner', 'AWS Academy Cloud Foundations'],
-  'Machine Learning': ['B.Tech AI & ML', 'NPTEL Deep Learning'],
+  'Fast Food Management': ['3rd Assistant Manager'],
+  'Employee Training': ['Team Trainer'],
+  'New Hire Training': ['Team Trainer'],
+  'Staff Training': ['Team Trainer'],
+  'Labor & Sales Tracking': ['3rd Assistant Manager'],
+  'Interpersonal Skills': ["3 roles at Culver's", 'Anoka High School', 'Special Olympics'],
+  'Claude Code': ['Satoshi Mail'],
+  'Anthropic Claude': ['Satoshi Mail'],
+  'Artificial Intelligence (AI)': ['Satoshi Mail'],
+  Entrepreneurship: ['LinkedIn · Entrepreneurship Foundations'],
+  'Capital Raising': ['LinkedIn · Foundations of Raising Capital'],
+  'Fast Food Operational Skills': ['Crew Member'],
+  'Food and Beverage Operations': ['Crew Member'],
+  'Food Preparation': ['Crew Member'],
+  'Food Service': ['Crew Member'],
+  'Customer Service': ['Crew Member'],
+  'Cash Handling': ['Crew Member'],
+  'Food Safety': ['Crew Member', servsafe, 'Food Allergens Essentials'],
+  'HACCP Regulations': [servsafe],
+  'Cross-Contamination Prevention': [servsafe],
+  'Safe Food Preparation': [servsafe],
+  'Food Allergies': ['Food Allergens Essentials'],
+  'Cleaning and Sanitizing': [servsafe],
+  'Receiving and Storing Food': [servsafe],
+  'Thawing, Cooking, Cooling & Reheating': [servsafe],
+  'Good Personal Hygiene': [servsafe],
+  'Disability Awareness': ['Special Olympics Minnesota', 'Freshwater Church', 'Young Life'],
+  Childcare: ['Freshwater Church', 'Young Life'],
+  'Sports Management': ['Special Olympics Minnesota'],
 };
 
 export type Episode = {
@@ -378,126 +373,150 @@ export const seasons: Season[] = [
   {
     number: 1,
     title: 'The Beginning',
-    period: '2021 – 2023',
-    synopsis: 'Intermediate years at Sri Chaitanya Junior College, Kakinada — Mathematics, Physics and Chemistry.',
+    period: '2020 – 2024',
+    synopsis: 'High school years at Anoka High School in Anoka, Minnesota.',
     episodes: [
       {
         code: 'S01 E01',
-        title: 'The Foundation',
-        description: 'BIEAP, MPC at Sri Chaitanya Junior College, Kakinada — finishing with a score of 925/1000.',
-        tags: ['MPC', 'BIEAP'],
-        runtime: 'Jun 2021 – May 2023',
+        title: 'The Student',
+        description: 'Four years at Anoka High School, building the interpersonal skills that carry through every season since.',
+        tags: ['Anoka High School', 'Interpersonal Skills'],
+        runtime: 'Sep 2020 – Jun 2024',
         palette: amber,
+      },
+      {
+        code: 'S01 E02',
+        title: 'The Head Start',
+        description: 'Graduated early by completing every academic requirement ahead of schedule.',
+        tags: ['High School Diploma', 'Graduated Early'],
+        runtime: 'Class of 2024',
+        palette: violet,
       },
     ],
   },
   {
     number: 2,
-    title: 'Enter: AI & ML',
-    period: '2023 – Present',
-    synopsis: 'B.Tech in Artificial Intelligence and Machine Learning at Aditya Engineering College, Surampalem.',
+    title: 'First Shift',
+    period: '2023 – 2026',
+    synopsis: "Three and a half years as a Crew Member at Culver's in Anoka — front of house, back of house and everything in between.",
     episodes: [
       {
         code: 'S02 E01',
-        title: 'The Engineer',
-        description: 'Bachelor of Technology in Artificial Intelligence and Machine Learning — CGPA 9.10.',
-        tags: ['B.Tech', 'AI & ML', 'CGPA 9.10'],
-        runtime: 'Oct 2023 – Present',
-        palette: violet,
-      },
-      {
-        code: 'S02 E02',
-        title: 'The Topper',
-        description: 'AIML Branch Topper with a 9.24 SGPA for the semester.',
-        tags: ['9.24 SGPA', 'Branch Topper'],
-        runtime: 'One semester',
+        title: 'The Crew Member',
+        description: 'Register, order running and guest engagement out front; prep, cooking and food-safety standards in the back.',
+        tags: ['Customer Service', 'Food Service', 'Cash Handling'],
+        runtime: 'Jan 2023 – Jun 2026',
         palette: crimson,
       },
       {
+        code: 'S02 E02',
+        title: 'The Rush',
+        description: 'High-pressure, high-volume rushes handled with composure, speed and quality — plus morning prep and closing duties.',
+        tags: ['Operations', 'Teamwork'],
+        runtime: 'Every lunch rush',
+        palette: amber,
+      },
+      {
         code: 'S02 E03',
-        title: 'The Problem Solver',
-        description: 'LeetCode 350+ (peak 1442), GFG 300+ (1436), CodeChef 200+ and HackerRank 5-star badges in C, Python, Java and SQL.',
-        tags: ['DSA', 'LeetCode', 'GFG', 'CodeChef', 'HackerRank'],
-        runtime: '850+ problems',
+        title: 'The All-Rounder',
+        description: 'Cross-trained and certified in every back-of-house and front-of-house position.',
+        tags: ['Every Position', 'Certified'],
+        runtime: "Culver's",
         palette: jade,
       },
     ],
   },
   {
     number: 3,
-    title: 'Learning to Build',
+    title: 'Giving Back',
     period: '2025 – 2026',
-    synopsis: 'One year of intensive Full-Stack Development training as a Trainee at Technical Hub Pvt Ltd.',
+    synopsis: 'Volunteering with Special Olympics Minnesota, Young Life and Freshwater Church — working 1:1 with people with disabilities.',
     episodes: [
       {
         code: 'S03 E01',
-        title: 'The Trainee',
-        description: 'Intensive Full-Stack Development training covering frontend, backend, database integration and deployment workflows.',
-        tags: ['FSD', 'Frontend', 'Backend', 'Databases'],
-        runtime: 'May 2025 – Jun 2026',
+        title: 'The Volunteer',
+        description: 'Event Volunteer with Special Olympics Minnesota, supporting athletes 1:1 and keeping events running smoothly.',
+        tags: ['Special Olympics', 'Disability Awareness'],
+        runtime: 'Mar 2025 – Apr 2026',
         palette: ocean,
       },
       {
         code: 'S03 E02',
-        title: 'The Developer',
-        description: 'Developed responsive web applications — user interfaces, server-side logic and database connectivity.',
-        tags: ['React', 'Node.js', 'Express.js'],
-        runtime: 'Technical Hub',
+        title: 'The Mentor',
+        description: 'Adult Volunteer with Young Life and Special Needs Ministry Volunteer at Freshwater Church.',
+        tags: ['Young Life', 'Freshwater Church', 'Childcare'],
+        runtime: 'Mar 2025 – Apr 2026',
         palette: violet,
       },
       {
         code: 'S03 E03',
-        title: 'The Deployer',
-        description: 'Deployed and managed web applications with version control, debugging and end-to-end development practices.',
-        tags: ['Git / GitHub', 'Deployment'],
-        runtime: 'Technical Hub',
-        palette: jade,
+        title: 'The Board Member',
+        description: 'Member of the Special Olympics Minnesota College Board of Directors.',
+        tags: ['Leadership', 'Special Olympics'],
+        runtime: 'Sep 2025 – May 2026',
+        palette: crimson,
       },
     ],
   },
   {
     number: 4,
-    title: 'Building Real Products',
-    period: '2026',
-    synopsis: 'Three Originals — an AI platform, a payment gateway and a multi-tenant SaaS — plus national-level recognition.',
+    title: 'Leveling Up',
+    period: '2025 – 2026',
+    synopsis: "Business foundations, food-safety credentials and two promotions at Culver's.",
     episodes: [
       {
         code: 'S04 E01',
-        title: 'The AI Builder',
-        description: 'PolicyGuard AI — LLM-based Q&A and key-information extraction across 500+ policy documents at 92% accuracy.',
-        tags: ['Python', 'NLP', 'LLM'],
-        runtime: '2026',
-        palette: crimson,
-      },
-      {
-        code: 'S04 E02',
-        title: 'The Architect',
-        description: 'Payment Gateway System and Multi-Tenant SaaS Platform — state machines, microservices, tenant isolation and RBAC.',
-        tags: ['Node.js', 'PostgreSQL', 'Docker'],
-        runtime: '2026',
+        title: 'The Founder Track',
+        description: 'Completed Entrepreneurship Foundations and Foundations of Raising Capital on LinkedIn Learning.',
+        tags: ['Entrepreneurship', 'Capital Raising'],
+        runtime: 'Oct 2025',
         palette: amber,
       },
       {
-        code: 'S04 E03',
-        title: 'The Fellow',
-        description: 'Selected as a Tech Fellow at AlgoUniversity and reached the Semi-Finals of Flipkart GRiD 7.0.',
-        tags: ['AlgoUniversity', 'Flipkart GRiD 7.0'],
-        runtime: 'National stage',
+        code: 'S04 E02',
+        title: 'The Trainer',
+        description: 'Promoted to Team Trainer — coaching new hires across positions and running certification assessments.',
+        tags: ['Employee Training', 'New Hire Training'],
+        runtime: 'Jun – Sep 2026',
         palette: ocean,
+      },
+      {
+        code: 'S04 E03',
+        title: 'The Certified',
+        description: 'ServSafe Food Protection Manager (score 86) and StateFoodSafety Food Allergens Essentials.',
+        tags: ['ServSafe', 'Food Safety'],
+        runtime: 'Aug 2026',
+        palette: jade,
+      },
+      {
+        code: 'S04 E04',
+        title: 'The Manager',
+        description: "Promoted to 3rd Assistant Manager at Culver's Restaurants in Anoka.",
+        tags: ['Fast Food Management', 'Labor & Sales Tracking'],
+        runtime: 'Sep 2026 – Present',
+        palette: crimson,
       },
     ],
   },
   {
     number: 5,
-    title: "What's Next",
-    period: 'Now streaming',
-    synopsis: 'The interests on the resume point to the next arc of the story.',
+    title: 'The Builder',
+    period: '2026 – Now streaming',
+    synopsis: 'From an idea to a live product — and the first business on the way.',
     episodes: [
       {
         code: 'S05 E01',
-        title: 'The Next Chapter',
-        description: 'Exploring System Design, Cloud Computing (AWS) and Machine Learning.',
-        tags: ['System Design', 'AWS', 'Machine Learning'],
+        title: 'Satoshi Mail',
+        description: 'Built an interactive archive of Satoshi Nakamoto’s public records and writings with Claude Code.',
+        tags: ['Claude Code', 'AI', 'Bitcoin'],
+        runtime: 'Oct 2026',
+        palette: amber,
+      },
+      {
+        code: 'S05 E02',
+        title: 'The Next Venture',
+        description: 'Building a first business in the hospitality and entertainment space — and looking to connect with investors and entrepreneurs.',
+        tags: ['Entrepreneurship', 'Hospitality', 'Entertainment'],
         runtime: 'In production',
         palette: violet,
       },
@@ -508,16 +527,39 @@ export const seasons: Season[] = [
 export type TopPick = { label: string; title: string; detail: string; palette: Palette };
 
 export const topPicks: TopPick[] = [
-  { label: 'Primary language', title: 'Java', detail: 'Listed as primary on the resume • Oracle certified', palette: amber },
-  { label: 'The AI Original', title: 'PolicyGuard AI', detail: '500+ documents • 92% accuracy', palette: crimson },
-  { label: 'Biggest stage', title: 'Flipkart GRiD 7.0', detail: 'Semi-Finalist', palette: ocean },
-  { label: 'National selection', title: 'AlgoUniversity', detail: 'Tech Fellow', palette: violet },
-  { label: 'Academic high', title: 'Branch Topper', detail: '9.24 SGPA in AI & ML', palette: jade },
-  { label: 'Cloud credential', title: 'AWS AI Practitioner', detail: 'AWS Certified', palette: amber },
-  { label: 'Problems solved', title: '850+', detail: 'LeetCode 350+ • GFG 300+ • CodeChef 200+', palette: crimson },
-  { label: 'The training arc', title: '1 Year of FSD', detail: 'Technical Hub Pvt Ltd', palette: ocean },
-  { label: 'Database credential', title: 'MongoDB', detail: 'Certified Associate Developer', palette: jade },
-  { label: 'Current focus', title: 'System Design', detail: 'with Cloud (AWS) & Machine Learning', palette: violet },
+  { label: 'Current role', title: '3rd Assistant Manager', detail: "Culver's Restaurants • Anoka", palette: crimson },
+  { label: 'The Original', title: 'Satoshi Mail', detail: 'A Satoshi Nakamoto archive built with Claude', palette: amber },
+  { label: 'Career climb', title: 'Crew → Manager', detail: 'Two promotions in under four years', palette: ocean },
+  { label: 'Built with', title: 'Claude Code', detail: 'Anthropic Claude • AI', palette: violet },
+  { label: 'Board seat', title: 'Special Olympics MN', detail: 'College Board of Directors', palette: jade },
+  { label: 'Food safety', title: 'ServSafe Manager', detail: 'Score 86 • valid through 2031', palette: amber },
+  { label: 'Founder track', title: 'Entrepreneurship', detail: 'LinkedIn Learning certified', palette: crimson },
+  { label: 'Giving back', title: '4 Volunteer Roles', detail: 'Special Olympics • Young Life • Freshwater', palette: ocean },
+  { label: 'Head start', title: 'Graduated Early', detail: 'Anoka High School', palette: violet },
+  { label: 'Up next', title: 'First Venture', detail: 'Hospitality & entertainment', palette: jade },
+];
+
+/** Hero section: the meta line and the floating chips next to the portrait. */
+export const heroMeta = ['2023 – Present', "Culver's → Founder", `${projects.length} Original`, `${certifications.length} Certifications`];
+export const heroChips = [
+  { text: 'Crew → Manager', sub: "Culver's Restaurants" },
+  { text: 'Satoshi Mail', sub: 'Live in beta' },
+  { text: 'Claude Code · AI', sub: 'Builder stack' },
+];
+
+/** About section facts grid. */
+export const aboutFacts = [
+  { k: 'Now', v: '3rd Assistant Manager', s: "Culver's Restaurants · since Sep 2026" },
+  { k: 'Building', v: 'Satoshi Mail', s: 'Satoshi Nakamoto archive · 2026' },
+  { k: 'Education', v: education[0].school, s: `${education[0].degree} · ${education[0].score}` },
+  { k: 'Based in', v: profile.location, s: profile.country },
+];
+
+/** Stat tiles beside the resume preview. */
+export const resumeStats = [
+  { v: String(experience.length), k: 'Roles' },
+  { v: String(projects.length), k: projects.length === 1 ? 'Original' : 'Originals' },
+  { v: String(certifications.length), k: 'Certs' },
 ];
 
 /** Slides for the "▶ Play Intro" cinematic sequence. */
@@ -525,45 +567,40 @@ export type IntroSlide = { kicker: string; title: string; lines: string[]; chips
 
 export const introSlides: IntroSlide[] = [
   {
-    kicker: 'Education',
-    title: 'B.Tech · AI & ML',
-    lines: ['Aditya Engineering College, Surampalem', 'October 2023 – Present'],
-    chips: ['CGPA 9.10'],
+    kicker: 'The mindset',
+    title: 'Challenge the status quo.',
+    lines: ['Curiosity · independent thinking · new ideas', 'Across business, technology and innovation'],
   },
   {
-    kicker: 'Skills',
-    title: 'Java first.',
-    lines: ['Python, C, C++ · React, Node.js, Express.js', 'PostgreSQL, MongoDB, MySQL · Docker, REST, JWT'],
-    chips: ['Java', 'Python', 'React', 'Node.js', 'Docker', 'PostgreSQL'],
+    kicker: 'Career',
+    title: 'Crew → Manager',
+    lines: ["Culver's Restaurants · Anoka, Minnesota", 'Crew Member · Team Trainer · 3rd Assistant Manager'],
+    chips: ['Leadership', 'Training', 'Operations'],
   },
   {
-    kicker: 'Training',
-    title: 'The Training Arc',
-    lines: ['One year of intensive Full‑Stack Development training', 'Trainee · Technical Hub Pvt Ltd · May 2025 – June 2026', 'Frontend · Backend · Databases · Deployment'],
+    kicker: 'The Original',
+    title: 'Satoshi Mail',
+    lines: ['An interactive archive of Satoshi Nakamoto', 'Built with Claude Code · live in beta'],
+    chips: ['Claude Code', 'AI', 'Bitcoin'],
   },
   {
-    kicker: 'Projects',
-    title: 'Three Originals',
-    lines: ['PolicyGuard AI — 500+ documents, 92% accuracy', 'Payment Gateway — 1,000+ transactions, 99.8% uptime', 'Multi-Tenant SaaS — 50+ tenants, zero unauthorized access'],
-  },
-  {
-    kicker: 'Achievements',
-    title: 'Top Moments',
-    lines: ['Tech Fellow — AlgoUniversity', 'Semi-Finalist — Flipkart GRiD 7.0', 'AIML Branch Topper — 9.24 SGPA'],
+    kicker: 'Giving back',
+    title: 'Four volunteer roles',
+    lines: ['Special Olympics Minnesota · Young Life · Freshwater Church', 'College Board of Directors · Special Olympics MN'],
   },
   {
     kicker: 'Certified',
-    title: '16 Certifications',
-    lines: ['AWS · MongoDB · Oracle · GitHub · Pearson', 'NPTEL · Cisco · Udemy'],
+    title: `${certifications.length} Certifications`,
+    lines: ['ServSafe Manager · Food Allergens Essentials', 'Entrepreneurship · Raising Capital'],
   },
   {
     kicker: 'Current mission',
-    title: 'Now exploring',
-    lines: ['System Design · Cloud Computing (AWS) · Machine Learning'],
+    title: 'The first venture',
+    lines: ['Building a business in hospitality & entertainment'],
   },
 ];
 
-export type ProfileId = 'sushmita' | 'recruiter' | 'developer' | 'creative';
+export type ProfileId = 'tyler' | 'recruiter' | 'developer' | 'creative';
 export type SectionId = 'about' | 'journey' | 'originals' | 'picks' | 'skills' | 'moments' | 'story';
 
 export const viewerProfiles: {
@@ -574,8 +611,8 @@ export const viewerProfiles: {
   order: SectionId[];
 }[] = [
   {
-    id: 'sushmita',
-    name: 'Sushmita',
+    id: 'tyler',
+    name: 'Tyler',
     blurb: 'The full series, in order',
     color: '#e5132b',
     order: ['about', 'journey', 'originals', 'picks', 'skills', 'moments', 'story'],
@@ -589,10 +626,10 @@ export const viewerProfiles: {
   },
   {
     id: 'developer',
-    name: 'Developer',
-    blurb: 'Projects, stack & GitHub first',
+    name: 'Investor',
+    blurb: 'Projects & ventures first',
     color: '#46e3a8',
-    order: ['originals', 'skills', 'journey', 'moments', 'about', 'picks', 'story'],
+    order: ['originals', 'about', 'journey', 'skills', 'moments', 'picks', 'story'],
   },
   {
     id: 'creative',
@@ -604,10 +641,10 @@ export const viewerProfiles: {
 ];
 
 export const sectionMeta: Record<SectionId, { nav: string; card: string; meta: string; palette: Palette }> = {
-  about: { nav: 'About', card: 'About Me', meta: 'The Pilot • Education & training', palette: violet },
+  about: { nav: 'About', card: 'About Me', meta: 'The Pilot • Who I am', palette: violet },
   journey: { nav: 'Journey', card: 'My Journey', meta: `${seasons.length} Seasons • ${seasons.reduce((n, s) => n + s.episodes.length, 0)} Episodes`, palette: amber },
-  originals: { nav: 'Originals', card: 'My Projects', meta: `${projects.length} Originals • 2026`, palette: crimson },
-  picks: { nav: 'Top Picks', card: 'Top Picks', meta: 'Top 10 from the resume', palette: jade },
+  originals: { nav: 'Originals', card: 'My Projects', meta: `${projects.length} ${projects.length === 1 ? 'Original' : 'Originals'} • ${projects[0].year}`, palette: crimson },
+  picks: { nav: 'Top Picks', card: 'Top Picks', meta: 'Top 10 from the profile', palette: jade },
   skills: { nav: 'Skills', card: 'My Skills', meta: `${skillCategories.length} Categories`, palette: ocean },
   moments: { nav: 'Moments', card: 'My Achievements', meta: `${achievements.length} Moments • ${certifications.length} Certifications`, palette: crimson },
   story: { nav: 'Resume', card: 'The Full Story', meta: 'Resume • View & download', palette: violet },

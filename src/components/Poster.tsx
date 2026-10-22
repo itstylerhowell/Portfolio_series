@@ -88,6 +88,17 @@ export function ProjectArt({ project, className = '' }: { project: Project; clas
             <path d="M188 228 h190" strokeWidth="1" strokeOpacity="0.2" />
           </g>
         )}
+        {project.motif === 'mail' && (
+          <g fill="none" stroke={a}>
+            <rect x="196" y="58" width="170" height="116" rx="12" strokeWidth="2" strokeOpacity="0.85" />
+            <path d="M200 64 L281 126 L362 64" strokeWidth="2" strokeOpacity="0.85" strokeLinejoin="round" />
+            <path d="M200 170 L262 112 M362 170 L300 112" strokeWidth="1.2" strokeOpacity="0.4" />
+            <g transform="translate(314 156)">
+              <circle r="30" fill={a} fillOpacity="0.18" strokeWidth="2" />
+              <text y="13" textAnchor="middle" fontFamily="Inter, sans-serif" fontWeight="700" fontSize="38" fill={a} stroke="none">₿</text>
+            </g>
+          </g>
+        )}
       </svg>
     </PosterBackdrop>
   );
