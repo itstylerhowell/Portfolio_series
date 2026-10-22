@@ -15,10 +15,8 @@ export default function FinalCTA({ onReplay }: { onReplay: () => void }) {
 
   const ctas = [
     { label: "Let's Build", href: `mailto:${profile.email}?subject=${encodeURIComponent("Let's build something")}`, primary: true, cursor: 'play' },
-    { label: 'LinkedIn', href: profile.links.linkedin, cursor: 'link' },
-    { label: 'GitHub', href: profile.links.github, cursor: 'link' },
-    { label: 'X', href: profile.links.x, cursor: 'link' },
     { label: 'Email', href: `mailto:${profile.email}`, cursor: 'link' },
+    { label: 'Call or Text', href: profile.phoneHref, cursor: 'link' },
   ];
 
   return (
@@ -80,7 +78,11 @@ export default function FinalCTA({ onReplay }: { onReplay: () => void }) {
         ))}
       </motion.div>
 
-      <div className="relative mt-16 flex flex-wrap justify-center gap-6 text-xs font-semibold tracking-[0.24em] text-smoke">
+      <p className="relative mt-6 select-text text-sm text-mist">
+        {profile.email} <span className="mx-2 text-smoke">·</span> {profile.phone}
+      </p>
+
+      <div className="relative mt-12 flex flex-wrap justify-center gap-6 text-xs font-semibold tracking-[0.24em] text-smoke">
         <button type="button" onClick={() => scrollTo(0, { offset: 0 })} className="hover:text-bone">
           ↺ WATCH AGAIN
         </button>

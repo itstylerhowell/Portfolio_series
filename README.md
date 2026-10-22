@@ -33,7 +33,7 @@ The static site is written to `dist/` and can be deployed as-is to Vercel, Netli
 
 | To change… | Edit |
 | --- | --- |
-| Name, intro, email, LinkedIn, GitHub | `profile` |
+| Name, intro, email, phone | `profile` |
 | A project, or a new one | `projects` (add an object; it appears in Originals, the overlay, the resume sheet and the counts) |
 | Achievements / certifications | `achievements`, `certifications` |
 | Skills and their "where it's used" notes | `skillCategories`, `skillEvidence` |

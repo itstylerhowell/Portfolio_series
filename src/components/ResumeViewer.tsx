@@ -96,16 +96,8 @@ export function ResumeSheet() {
           <a href={`mailto:${profile.email}`} className="block hover:text-bone">
             {profile.email}
           </a>
-          <a href={profile.links.linkedin} target="_blank" rel="noreferrer" className="hover:text-bone">
-            LinkedIn ↗
-          </a>
-          {' · '}
-          <a href={profile.links.github} target="_blank" rel="noreferrer" className="hover:text-bone">
-            GitHub ↗
-          </a>
-          {' · '}
-          <a href={profile.links.x} target="_blank" rel="noreferrer" className="hover:text-bone">
-            X ↗
+          <a href={profile.phoneHref} className="block hover:text-bone">
+            {profile.phone}
           </a>
         </div>
       </header>

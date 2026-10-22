@@ -22,11 +22,8 @@ export const profile = {
   location: 'Anoka, Minnesota',
   country: 'United States',
   email: 'itstylerhowell@gmail.com',
-  links: {
-    linkedin: 'https://www.linkedin.com/in/tyler-howell-a57b81355/',
-    github: 'https://github.com/itstylerhowell',
-    x: 'https://x.com/TylerHowell88',
-  },
+  phone: '(763) 501-7276',
+  phoneHref: 'tel:+17635017276',
   resumePdf: '/assets/Tyler_Howell_Resume.pdf',
   resumeFileName: 'Tyler_Howell_Resume.pdf',
   portrait: {
