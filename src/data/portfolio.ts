@@ -140,7 +140,7 @@ export const projects: Project[] = [
     year: '2026',
     genre: 'AI • Bitcoin • Interactive Archive',
     logline: 'An interactive archive of the public records, documents and digital trail of Satoshi Nakamoto, the pseudonymous creator of Bitcoin.',
-    stack: ['Claude Code', 'Anthropic Claude', 'AI', 'Vercel'],
+    stack: ['Claude Code', 'Anthropic Claude', 'AI', 'Cloudflare Pages'],
     build: [
       "Inspired by Riley Walz and Luke Igel's Jmail — forked their open-source database as the foundation, then used Claude AI to build an interactive archive around Satoshi Nakamoto.",
       'Explores public records, historical documents and source materials, making the history and mystery of Bitcoin’s creator fun and engaging for Bitcoiners — and helping drive Bitcoin adoption.',
@@ -159,7 +159,7 @@ export const projects: Project[] = [
       { value: '₿', label: 'built for Bitcoiners' },
     ],
     // The repository is private for now, so no GitHub button is shown.
-    live: 'https://satoshimail.vercel.app',
+    live: 'https://satoshimail.pages.dev',
     palette: { from: '#1a0d02', via: '#8a4a07', to: '#0a0806', accent: '#ffb547' },
     motif: 'mail',
   },
